@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="shortcut icon" href="img/everything thrift small logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/everything thrift small logo.png" type="image/x-icon">
     
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -57,88 +57,62 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 ftco-animate">
-						<form action="#" class="billing-form bg-light p-3 p-md-5">
+						<form  id="paymentForm" class="billing-form bg-light p-3 p-md-5">
 							<h3 class="mb-4 billing-heading">Billing Details</h3>
-	          	<div class="row align-items-end">
-	          		<div class="col-md-6">
-	                <div class="form-group">
-	                	<label for="firstname">Firt Name</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-	              </div>
-	              <div class="col-md-6">
-	                <div class="form-group">
-	                	<label for="lastname">Last Name</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-                </div>
-                <div class="w-100"></div>
-		            
-		            <div class="w-100"></div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-	                	<label for="streetaddress">Street Address</label>
-	                  <input type="text" class="form-control" placeholder="House number and street name">
-	                </div>
-		            </div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
-	                </div>
-		            </div>
-		            <div class="w-100"></div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-	                	<label for="towncity">Town / City</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-		            </div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-		            		<label for="postcodezip">Postcode / ZIP *</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-		            </div>
-		            <div class="w-100"></div>
-		            <div class="col-md-6">
-	                <div class="form-group">
-	                	<label for="phone">Phone</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-	              </div>
-	              <div class="col-md-6">
-	                <div class="form-group">
-	                	<label for="emailaddress">Email Address</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-                </div>
-                
-	            </div>
+							<h5 id='product'></h5>
+	          	
+						<div class="form-group">
+							<label for="email">Email Address</label>
+							<input
+							type="email"
+							id="email-address"
+							required
+							class="form-control"
+							/>
+						</div>
+					  <!-- <div class="form-group">
+						<label for="amount">Amount</label>
+						<input type="tel" id="amount" required class="form-control" />
+					  </div> -->
+					  <!-- <div class="form-group">
+						  <label for="amount">Address</label>
+						  <input type="text" id="address" required   class="form-control"/>
+					  </div> -->
+			  
+					  <div class="form-group">
+						<label for="first-name">First Name</label>
+						<input type="text" id="first-name" class="form-control" />
+					  </div>
+					  <div class="form-group">
+						<label for="last-name">Last Name</label>
+						<input type="text" id="last-name" class="form-control" />
+					  </div>
+					  <div class="form-group">
+						<div class="col-md-12">
+							<div class="checkbox">
+							   <label><input type="checkbox" value="" class="mr-2" required> I have read and accept the terms and conditions</label>
+							</div>
+						</div>
+					</div>
+					  <div class="form-submit">
+						<button
+						  type="submit"
+						  class="btn btn-success"
+						  style="width: 50%; padding: 15px; margin-left: 25%"
+						  onclick="payWithPaystack()"
+						>
+						  Pay
+						</button>
+					  </div>
 	          </form><!-- END -->
 
+    
 
 
 	          <div class="row mt-5 pt-3 d-flex">
 	          	
 	          	<div class="col-md-6">
-	          		<div class="cart-detail bg-light p-3 p-md-4">
-	          			<h3 class="billing-heading mb-4">Payment Method</h3>
-									<div class="form-group">
-										<div class="col-md-12">
-											<div class="radio">
-											   <label><input type="radio" name="optradio" class="mr-2"> Paystack</label>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="col-md-12">
-											<div class="checkbox">
-											   <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
-											</div>
-										</div>
-									</div>
-									<p><a href="#"class="btn btn-primary py-3 px-4">Place an order</a></p>
-								</div>
+
 	          	</div>
 	          </div>
           </div> <!-- .col-md-8 -->
@@ -230,6 +204,8 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="product/productData.js"></script>
+  <script src="product/checkout.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
@@ -238,6 +214,36 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+
+  <script>
+	var paymentForm = document.getElementById("paymentForm");
+	paymentForm.addEventListener("submit", payWithPaystack, false);
+	function payWithPaystack(e) {
+		e.preventDefault();
+	  var handler = PaystackPop.setup({
+		key: "pk_test_8aa1e36848e27b41c69cbdfbe6ec7586714e11d4", // Replace with your public key
+		email: document.getElementById("email-address").value,
+		amount: product.selling_price* 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
+		ref: ''+Math.floor((Math.random() * 1000000000) + 1), 
+		currency: "NGN", // Use GHS for Ghana Cedis or USD for US Dollars
+		callback: function (response) {
+		  //this happens after the payment is completed successfully
+		  var reference = response.reference;
+		  window.location.href=`shop 2.html?id=${product.id}`;
+		//   alert("Payment complete! Reference: " + reference);
+		  // Make an AJAX call to your server with the reference to verify the transaction
+		},
+		onClose: function () {
+		  alert("Transaction was not completed, window closed.");
+		},
+	  });
+	  handler.openIframe();
+	}
+  </script>
+
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
 
   <script>
 		$(document).ready(function(){

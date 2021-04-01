@@ -7732,14 +7732,14 @@ h1, h2, h3, h4, h5,
   box-shadow: none !important; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
-  .btn.btn-primary {
+  /* .btn.btn-primary {
     background: #f1b8c4;
     border: 1px solid #f1b8c4;
-    color: #fff; }
-    .btn.btn-primary:hover {
+    color: #fff; } */
+    /* .btn.btn-primary:hover {
       border: 1px solid #f1b8c4;
       background: transparent;
-      color: #f1b8c4; }
+      color: #f1b8c4; } */
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #f1b8c4;
       background: transparent;
