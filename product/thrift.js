@@ -21,6 +21,7 @@ items.forEach(item=>{
                 <div class="pricing">
                     <p class="price">Market price ${currency(item.market_price)}<span></span></p>
                     <p class="price">Selling price ${currency(item.selling_price)}<span></span></p>
+                    
                 </div>
                 <div class="rating">
                 

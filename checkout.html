@@ -9,6 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -46,7 +47,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-0 bread" style="color: white;font-weight: 700;" >Checkout</h1>
+            <h1 class="mb-0 bread" style="color: white;font-weight: 700;  font-family: 'Charm', cursive;" >Checkout</h1>
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html" style="color: black; font-weight: 600;">Home</a></span> | <span style="color: white;">Checkout</span></p>
           </div>
         </div>
@@ -57,37 +58,55 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 ftco-animate">
-						<form  id="paymentForm" class="billing-form bg-light p-3 p-md-5">
+						<form  id="paymentForm" class="billing-form bg-light p-3 p-md-5" style=" font-family: 'Charm', cursive;">
 							<h3 class="mb-4 billing-heading">Billing Details</h3>
 							<h5 id='product'></h5>
-	          	
+							
 						<div class="form-group">
 							<label for="email">Email Address</label>
 							<input
-							type="email"
+						 style="color:black;"	type="email"
 							id="email-address"
 							required
 							class="form-control"
 							/>
 						</div>
-					  <!-- <div class="form-group">
-						<label for="amount">Amount</label>
-						<input type="tel" id="amount" required class="form-control" />
-					  </div> -->
-					  <!-- <div class="form-group">
+					  <div class="form-group">
+						<label for="amount">Phone Number</label>
+						<input style="color:black;" type="tel" id="phone" required class="form-control" />
+					  </div>
+					   <div class="form-group">
 						  <label for="amount">Address</label>
-						  <input type="text" id="address" required   class="form-control"/>
-					  </div> -->
-			  
+						  <input style="color:black;" type="text" id="address" required   class="form-control"/>
+					  </div> 
+					  <div class="col-md-12">
+						<div class="checkbox">
+						   <label><input style="color:black;" type="checkbox" id="mainland" value="" class="mr-2">Lagos Mainland  -  Delivery fee -  N1000</label>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="checkbox">
+						   <label><input style="color:black;" type="checkbox" value="" id="island" class="mr-2">Lagos Island -  Delivery fee -  N1000</label>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="checkbox">
+						   <label><input style="color:black;" type="checkbox" value="" id="outside" class="mr-2">Outside Lagos -  Delivery fee -  N1000 </label>
+						</div>
+					</div>
 					  <div class="form-group">
 						<label for="first-name">First Name</label>
-						<input type="text" id="first-name" class="form-control" />
+						<input style="color:black;" type="text" id="first-name" class="form-control" />
 					  </div>
 					  <div class="form-group">
 						<label for="last-name">Last Name</label>
-						<input type="text" id="last-name" class="form-control" />
+						<input style="color:black;" type="text" id="last-name" class="form-control" />
 					  </div>
 					  <div class="form-group">
+							<ul>
+								<li>Money cant be refund after payment</li>
+								<li>Delivery fee will be added to the main price</li>
+							</ul>
 						<div class="col-md-12">
 							<div class="checkbox">
 							   <label><input type="checkbox" value="" class="mr-2" required> I have read and accept the terms and conditions</label>
@@ -103,8 +122,14 @@
 						>
 						  Pay
 						</button>
+						<br><br>
+						<h5 style="text-align: center;"><em>Or</em></h5> 
 					  </div>
-	          </form><!-- END -->
+					
+	          </form>
+			  <br>
+			  <a href="https://wa.me/2348023641729?text=Hi,%20my%20name%20is%20____%20."><button  style="color:white; width: 50%; padding: 15px; margin-left: 25%" class="btn btn-info" >Talk with Agent</button></a>
+			<!-- END -->
 
     
 
@@ -217,15 +242,81 @@
 
 
   <script>
+	// // let single = items.find(item => item == window.location.href)
+
+// let oneProduct = function () {
+	let id = window.location.href.split('?')[1];
+		id = id.split('=');
+		id = id[1];
+
+	let product = items.find(function(item, index){
+		if(item.id == id) {
+			return item;
+		}
+	}) 
+	
+	console.log(product, id);
+	
+function currency(num){
+    const currency = new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN' });
+    return currency.format(num)
+}
+
+let checkP = '';
+if (product) {
+	checkP += `Product:<span style="text-transform:capitalize"> ${product.descripition}</span><br>
+             Size: ${product.size}
+             <p class="price" style="color:black; font-size:30px; font-weight:600;">${currency(product.selling_price)}<span></span></p>
+             <a href="product/product_images/${product.image1}" class="image-popup"><img src="product/product_images/${product.image1}" class="img-fluid" alt="Colorlib Template"></a>`;
+             
+}else{
+	checkP += "<h2>No Product found</h2>";
+}
+
+
+
+
+document.getElementById('product').innerHTML= checkP;
 	var paymentForm = document.getElementById("paymentForm");
 	paymentForm.addEventListener("submit", payWithPaystack, false);
 	function payWithPaystack(e) {
 		e.preventDefault();
 	  var handler = PaystackPop.setup({
 		key: "pk_test_8aa1e36848e27b41c69cbdfbe6ec7586714e11d4", // Replace with your public key
-		email: document.getElementById("email-address").value,
-		amount: product.selling_price* 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
+		email: document.getElementById("email-address").value,		
+		amount: (product.selling_price+product.rider)* 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
 		ref: ''+Math.floor((Math.random() * 1000000000) + 1), 
+		metadata:{
+ 			"custom_fields":[
+  				{
+					"display_name":"Name",
+					"variable_name":"Name",
+					"value":document.getElementById("first-name").value,
+   			    },
+				{
+					"display_name":"Name",
+					"variable_name":"Name",
+					"value":document.getElementById("last-name").value,
+   			    },
+				{
+					"display_name":"Phone Number",
+					"variable_name":"Phone Number",
+					"value":document.getElementById("phone").value,
+   			    },
+				{
+					"display_name":"Address",
+					"variable_name":"Address",
+					"value":document.getElementById("address").value,
+				},
+				{
+					"display_name":"Dress Name",
+					"variable_name":"Dress Name",
+					"value":product.descripition,
+				}
+ 			 ]
+			  
+        },
+		
 		currency: "NGN", // Use GHS for Ghana Cedis or USD for US Dollars
 		callback: function (response) {
 		  //this happens after the payment is completed successfully

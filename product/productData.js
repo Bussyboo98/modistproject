@@ -8,9 +8,10 @@ let items = [
         selling_price: 2000,
         size: 'UK 12-14',
         descripition: 'sleeveless dress with pleated bottom',
-        status: 'Available',
+        status: 'Sold',
         describe:'Show the world your bold taste and personal flair with this Sleeveless Dress with Pleated Bottom that radiates confidence! This dress will add some summer sizzle to your next special event. Go sleeveless for a gorgeous summer look! The cotton blend will allow your skin to breathe while you enjoy a really fashionable look! Perfect for the hot summer days.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -22,9 +23,10 @@ let items = [
         selling_price: 2000,
         size: 'UK18-20',
         descripition: 'Red check free dress',
-        status: 'sold',
+        status: 'Sold',
         describe:'If you are looking for a good top that will get you through all seasons this is it. The right Red Check will help you create a feminine and fashionable look that can not be ignored!',
-        describe2:'A different trousers, some new boots, and this Red Check Free Dress can do wonders with many different outfits.'
+        describe2:'A different trousers, some new boots, and this Red Check Free Dress can do wonders with many different outfits.',
+        rider: 1000
     },
 
     {
@@ -36,9 +38,10 @@ let items = [
         selling_price: 2000,
         size: 'UK 8',
         descripition: 'Black skater dress',
-        status: 'Available',
+        status: 'Sold',
         describe:'The Black skater dress is great if you are of smaller stature because the empire waist will lengthen your midsection and create the appearance of added height. This Black skater dress will have you looking flirty and cute throughout your day!',
-        describe2:'Designed to show off just the right amount of leg, this knee-length dress strikes the right balance between office stylishness and night-time elegance.'
+        describe2:'Designed to show off just the right amount of leg, this knee-length dress strikes the right balance between office stylishness and night-time elegance.',
+        rider: 1000
     },
 
     {
@@ -52,7 +55,8 @@ let items = [
         descripition: 'Burberry free dress',
         status: 'Available',
         describe: 'Wearing a top can make you feel fun, flirty and feminine. This Burberry Top is a wardrobe essential and can be worn in so many different ways with a variety of skirts, trousers and shoes. Pair this top with a pair of heels and a nice trouser or skirt for a really stunning look.',
-        describe2:'The exquisite color will have you give you a coquettish look and the ankle length will make you look feminine and professional at the same time, so you can wear it before, during and after work!'
+        describe2:'The exquisite color will have you give you a coquettish look and the ankle length will make you look feminine and professional at the same time, so you can wear it before, during and after work!',
+        rider: 1000
     },
 
     {
@@ -66,7 +70,8 @@ let items = [
         descripition: 'blue linen dress',
         status: 'Available',
         describe:'Perfect for the beach or the city, you’ll be dazzling in this stunning garment that shows off your sense of style, sophistication, and flair for fun. You’ll always look and feel your absolute best in this Blue Linen Dress with Roll-up Sleeves which will soon become your summer favorite.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
 
@@ -81,7 +86,8 @@ let items = [
         descripition: 'Brown stretchy dress',
         status: 'Available',
         describe:'When choosing a summer dress you want to find something that will keep you cool but also looking good. While each woman will have different opinions on the best summer dress, ultimately it’s up to you to choose what you’re comfortable and confident in.',
-        describe2:'This Brown stretchy dress was designed to be your go-to summer dress because it will keep you cozy and stylish all day long. It is loose enough to be comfortable without seeming baggy, and it is snug enough to be captivating.'
+        describe2:'This Brown stretchy dress was designed to be your go-to summer dress because it will keep you cozy and stylish all day long. It is loose enough to be comfortable without seeming baggy, and it is snug enough to be captivating.',
+        rider: 1000
     },
 
     {
@@ -95,7 +101,8 @@ let items = [
         descripition: 'light blue dress',
         status: 'Available',
         describe:'The hem comes to just above the knee, for a look that’s both smart and eye-catching. This is short enough to be flirty, but still long enough to be appropriate for most events Above-the-knee dresses will always look great with either sneakers or heels.',
-        describe2:'The v-neck neckline shows the perfect amount of cleavage and brings a certain boldness and self-assurance to your outfit. This neckline style is a very popular choice of women of all shapes and sizes because it will flatter any figure.'
+        describe2:'The v-neck neckline shows the perfect amount of cleavage and brings a certain boldness and self-assurance to your outfit. This neckline style is a very popular choice of women of all shapes and sizes because it will flatter any figure.',
+        rider: 1000
     },
 
     {
@@ -109,7 +116,8 @@ let items = [
         descripition: 'Blue and black peplum dress',
         status: 'Available',
         describe:'The beautiful blue color will have you feeling good inside and out and the asymmetrical design will accentuate your shapely shoulders and collarbones and will balance your shape. The natural waistline design follows the natural curves of your body to create a form-flattering shape.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -123,7 +131,8 @@ let items = [
         descripition: 'white and pink floral top',
         status: 'Available',
         describe: 'This Summer floral dress will soon become a seasonal favorite. You’ll be dazzling in this stunning outfit that shows off your sense of style, sophistication, and flair for fun.The knee length makes this charming dress perfect for a party, or the beach could be the perfect place to sport the pineapple print.',
-        describe2: 'Whether by the sea, pool or on social media, this dress will have you looking your best!'
+        describe2: 'Whether by the sea, pool or on social media, this dress will have you looking your best!',
+        rider: 1000
     },
 
     {
@@ -137,7 +146,8 @@ let items = [
         descripition: 'white and pink floral top',
         status: 'Available',
         describe:'The colorful pattern deliver a sparkling dazzle to your walk. The combination of vertical stripes and the belt tie will offer a cinching and slimming effect that will sleek out your figure. The belt will also accentuate your hips and waist for a look that’s both smart and flattering.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -151,7 +161,8 @@ let items = [
         descripition: 'Cream and Brown Stripes Office Dress',
         status: 'Available',
         describe:'Elbow-length sleeves have been trending steadily for some time now, and these cute elbow length sleeves really enhance the simple elegance of this dress',
-        describe2:'The skirt length is low enough to be modest but just high enough to give your legs a longer look and to give you slimmer demeanor. And the ‘above the knee’ height of the skirt will go just great with your favorite pair of flats.'
+        describe2:'The skirt length is low enough to be modest but just high enough to give your legs a longer look and to give you slimmer demeanor. And the ‘above the knee’ height of the skirt will go just great with your favorite pair of flats.',
+        rider: 1000
     },
 
     {
@@ -165,7 +176,8 @@ let items = [
         descripition: 'White Peplum Top with Straps',
         status: 'Available',
         describe:'This White Peplum Top with Straps will be cuddly, soft and warm while naturally emphasizing your feminine shape.',
-        describe2:''
+        describe2: '',
+        rider: 1000
 
     },
 
@@ -180,7 +192,8 @@ let items = [
         descripition: 'Knotable Waist Black Top',
         status: 'Available',
         describe:'If you’ve been thinking of treating yourself to a new summer wardrobe, you don’t want to pass on this beautiful summer floral dress. There’s no better way to express to yourself than with a new outfit that will stand out and turn heads.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -194,7 +207,8 @@ let items = [
         descripition: 'silky pink and grey top with empellished sleeve',
         status: 'Available',
         describe:'The skirt length is low enough to be modest but just high enough to give your legs a longer look and to give you slimmer demeanor. And the ‘above the knee’ height of the skirt will go just great with your favorite pair of flats.',
-        describe2:'The natural design of the floral print will make the plethora of colors stand out contrasting against the black fabric background. Give yourself the look and confidence you deserve and get this exquisite summer floral dress today!'
+        describe2:'The natural design of the floral print will make the plethora of colors stand out contrasting against the black fabric background. Give yourself the look and confidence you deserve and get this exquisite summer floral dress today!',
+        rider: 1000
     },
 
     {
@@ -208,7 +222,8 @@ let items = [
         descripition: 'yellow peplum top with black illusion',
         status: 'Available',
         describe:'When choosing a summer dress you want to find something that will keep you cool but also looking good. While each woman will have different opinions on the best summer dress, ultimately it’s up to you to choose what you’re comfortable and confident in.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -222,7 +237,8 @@ let items = [
         descripition: 'Grey chiffon shirt',
         status: 'Available',
         describe:'The Roll-up sleeves add to the overall elegance and practicality of the dress and are easy to roll-up when you need to free your arms or when it gets a bit too hot in the daytime.',
-        describe2:'The buttons down the front allow you to define the size of the V-shaped opening at your neck, giving the dress a touch of sensuality.'
+        describe2:'The buttons down the front allow you to define the size of the V-shaped opening at your neck, giving the dress a touch of sensuality.',
+        rider: 1000
     },
 
     {
@@ -236,7 +252,8 @@ let items = [
         descripition: 'Double breasted chiffon shirt',
         status: 'Available',
         describe:'Perfect for the beach or the city, you’ll be dazzling in this stunning garment that shows off your sense of style, sophistication, and flair for fun. You’ll always look and feel your absolute best in this Double Breasted Chiffon Dress with Roll-up Sleeves which will soon become your summer favorite.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -250,7 +267,8 @@ let items = [
         descripition: 'Blue and Orange floral chiffon top',
         status: 'Available',
         describe: 'This dress was made to flaunt your shape and show off your legs, all the while keeping you cool as a cucumber this summer season and exudes a flirtatious, boho-chic look that is designed to take you from desk to dinner. Unpretentious enough for around the town, but avant-garde enough you won’t dare be ignored!',
-        describe2:'The natural design of the floral print will make the plethora of colors stand out contrasting against the black fabric background. Give yourself the look and confidence you deserve and get this exquisite summer floral dress today!'
+        describe2:'The natural design of the floral print will make the plethora of colors stand out contrasting against the black fabric background. Give yourself the look and confidence you deserve and get this exquisite summer floral dress today!',
+        rider: 1000
     },
 
     {
@@ -264,7 +282,8 @@ let items = [
         descripition: 'Chiffon blue top with laced sleeves',
         status: 'Available',
         describe:'This Chiffon blue top with laced sleeves was designed to be your seasonal dress because it will keep you cozy and stylish all day long. It is loose enough to be comfortable without seeming baggy, and it is snug enough to be captivating.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -278,7 +297,8 @@ let items = [
         descripition: 'Chifon Black Top with elastic neck and band',
         status: 'Available',
         describe:'Perfect for the beach or the city, you’ll be dazzling in this stunning garment that shows off your sense of style, sophistication, and flair for fun. You’ll always look and feel your absolute best in this Chifon Black Top with elastic neck and band which will soon become your summer favorite.',
-        describe2:'This could be the perfect dress for you!'
+        describe2:'This could be the perfect dress for you!',
+        rider: 1000
     },
 
     {
@@ -292,7 +312,8 @@ let items = [
         descripition: 'cream and black print long top',
         status: 'Available',
         describe:'The v-neck neckline shows the perfect amount of cleavage and brings a certain boldness and self-assurance to your outfit. This neckline style is a very popular choice of women of all shapes and sizes because it will flatter any figure.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -306,7 +327,8 @@ let items = [
         descripition: 'Lemon pleated chiffon top',
         status: 'Available',
         describe:'The beautiful yellow color will have you feeling good inside and out and the asymmetrical design will accentuate your shapely shoulders and collarbones and will balance your shape. The natural waistline design follows the natural curves of your body to create a form-flattering shape.',
-        describe2:'Tie everything together with a pair of statement earrings you’re good to go.'
+        describe2:'Tie everything together with a pair of statement earrings you’re good to go.',
+        rider: 1000
     },
 
     {
@@ -320,7 +342,8 @@ let items = [
         descripition: 'embellished, assymetric neck black top',
         status: 'Available',
         describe:'When choosing a dress you want to find something that will keep you cool but also looking good. While each woman will have different opinions on the best summer dress, ultimately it’s up to you to choose what you’re comfortable and confident in.',
-        describe2:'he high slit skirt will make your legs looks teasingly attractive and give your legs a sense of freedom. The hidden back zipper will give you a snug and secure fit and the ankle skirt will add a dash of fashion to your rotation.'
+        describe2:'he high slit skirt will make your legs looks teasingly attractive and give your legs a sense of freedom. The hidden back zipper will give you a snug and secure fit and the ankle skirt will add a dash of fashion to your rotation.',
+        rider: 1000
     },
 
     {
@@ -334,7 +357,8 @@ let items = [
         descripition: 'Black sleeveless dress with front slit',
         status: 'Available',
         describe:'Not only do the buttons in front make the dress easier to put it on, but this lovely dress has buttons all the way down so it can also be worn open with jeans and a t-shirt.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -348,7 +372,8 @@ let items = [
         descripition: 'Pink off shoulder top with strap',
         status: 'Available',
         describe:'A bare shoulders look shows off just enough to get you noticed and is sure to turn some heads, The halter straps will give you that edge that you are looking for.',
-        describe2:'The empire waistline will elongate your torso for a slimming effect on your figure and without any sleeves to get in your way of fun this dress shows off a jazzy look for those warm summer nights.'
+        describe2:'The empire waistline will elongate your torso for a slimming effect on your figure and without any sleeves to get in your way of fun this dress shows off a jazzy look for those warm summer nights.',
+        rider: 1000
     },
 
     {
@@ -362,7 +387,8 @@ let items = [
         descripition: 'chiffon black shirt',
         status: 'Available',
         describe:'The empire waistline will elongate your torso for a slimming effect on your figure and without any sleeves to get in your way of fun this dress shows off a jazzy look for those warm summer nights.',
-        describe2:'Not only do the buttons in front make the dress easier to put it on, but this lovely dress has buttons all the way down so it can also be worn open with jeans and a t-shirt.'
+        describe2:'Not only do the buttons in front make the dress easier to put it on, but this lovely dress has buttons all the way down so it can also be worn open with jeans and a t-shirt.',
+        rider: 1000
     },
 
     {
@@ -376,7 +402,8 @@ let items = [
         descripition: ' Pink Chiffon sleeveless top with flounce',
         status: 'Available',
         describe:'This dress is designed for looks and ease, made to be breathable and built for comfort.',
-        describe2:'This Summer floral dress will soon become a seasonal favorite. You’ll be dazzling in this stunning outfit that shows off your sense of style, sophistication, and flair for fun.'
+        describe2:'This Summer floral dress will soon become a seasonal favorite. You’ll be dazzling in this stunning outfit that shows off your sense of style, sophistication, and flair for fun.',
+        rider: 1000
     },
 
     {
@@ -390,7 +417,8 @@ let items = [
         descripition: 'Chiffon peach top with front zip',
         status: 'Available',
         describe:'Since this below the knee length dress cuts off your legs visually midway, pair it with your favorite high heels to keep your legs looking long and lean',
-        describe2:'This dress is designed for looks and ease, made to be breathable and built for comfort.'
+        describe2:'This dress is designed for looks and ease, made to be breathable and built for comfort.',
+        rider: 1000
     },
 
     {
@@ -404,7 +432,8 @@ let items = [
         descripition: 'Sequin Top with strap',
         status: 'Available',
         describe:'A bare shoulders look shows off just enough to get you noticed and is sure to turn some heads, The halter straps will give you that edge that you are looking for.',
-        describe2:''
+        describe2:'',
+        rider: 1000
     },
 
     {
@@ -418,7 +447,8 @@ let items = [
         descripition: 'Blue Chiffon top',
         status: 'sold',
         describe:'Show the world your bold taste and personal flair with this Blue Chiffon top that radiates confidence! This dress will add some summer sizzle to your next special event. Go comfy for a gorgeous summer look! The cotton blend will allow your skin to breathe while you enjoy a really fashionable look! Perfect for everyday outing.',
-        describe2:'This dress is designed for looks and ease, made to be breathable and built for comfort.'
+        describe2:'This dress is designed for looks and ease, made to be breathable and built for comfort.',
+        rider: 1000
     },
 
     {
@@ -432,7 +462,8 @@ let items = [
         descripition: 'pink chiffon top',
         status: 'Available',
         describe:'This Summer floral dress will soon become a seasonal favorite. You’ll be dazzling in this stunning outfit that shows off your sense of style, sophistication, and flair for fun.The knee length makes this charming dress perfect for a party, or the beach could be the perfect place to sport the pineapple print.',
-        describe2: 'Whether by the sea, pool or on social media, this dress will have you looking your best'
+        describe2: 'Whether by the sea, pool or on social media, this dress will have you looking your best',
+        rider: 1000
     },
 ];
 
